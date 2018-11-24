@@ -13,6 +13,20 @@ public class StringUtils extends org.apache.commons.lang.StringUtils {
     public static final String[] EMPTY_ARRAY = new String[0];
 
     /**
+     * <p>Return the value of str and appendStr if the str is not empty.</p>
+     * <p>Return the value of EMPTY if the str is empty.</p>
+     *
+     * @param str - The parameter that needs to operate.
+     * @param appendStr - If the str is not EMPTY, append it to the end of str.
+     *
+     * @return The value of [str and appendStr] or [EMPTY].
+     */
+    public static String appendTo(String str, String appendStr) {
+
+        return isEmpty(str) ? EMPTY : (str + appendStr);
+    }
+
+    /**
      * Remove all the white space
      *
      * @param str - The String to handle, may be null
