@@ -7,7 +7,7 @@
     </properties>
 
     <context>
-        <component-scan base-package="cn.gin.webmvc.demo.controller" />
+        <component-scan base-package="cn.gin.webmvc.demo.web.controller" />
     </context>
 
     <bean name="jdbcTemplate" class="cn.gin.webmvc.demo.common.jdbc.JDBCTemplate"></bean>
@@ -20,7 +20,7 @@
         <property name="userDao" ref="userDao" />
     </bean>
 
-    <bean name="userController" class="cn.gin.webmvc.demo.controller.UserController" annotation="true">
+    <bean name="userController" class="cn.gin.webmvc.demo.web.controller.UserController" annotation="true">
         <property name="userService" ref="userService" />
     </bean>
 </beans>

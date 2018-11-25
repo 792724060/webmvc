@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<taglib xmlns="http://java.sun.com/xml/ns/javaee"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-jsptaglibrary_2_1.xsd" version="2.1">
+
+    <description>Webmvc Pagination Library</description>
+    <display-name>Webmvc Pagination</display-name>
+    <tlib-version>1.0</tlib-version>
+    <short-name>paging</short-name>
+    <uri>http://webmvc.gin.cn/tag/paging</uri>
+
+    <tag>
+        <description>Handler the data of pagination.</description>
+        <name>paging</name>
+        <tag-class>cn.gin.webmvc.support.paging.PagingTag</tag-class>
+        <body-content>scriptless</body-content>
+        <attribute>
+            <description>The current page.</description>
+            <name>currentPage</name>
+            <required>true</required>
+            <rtexprvalue>true</rtexprvalue>
+        </attribute>
+        <attribute>
+            <description>The count of data for per page.</description>
+            <name>pageSize</name>
+            <required>true</required>
+            <rtexprvalue>true</rtexprvalue>
+        </attribute>
+        <attribute>
+            <description>The count of page.</description>
+            <name>pageCount</name>
+            <required>true</required>
+            <rtexprvalue>true</rtexprvalue>
+        </attribute>
+        <attribute>
+            <description>The pagination URL.</description>
+            <name>url</name>
+            <required>true</required>
+            <rtexprvalue>true</rtexprvalue>
+        </attribute>
+        <attribute>
+            <description>The pagination URL.</description>
+            <name>queryItems</name>
+            <required>false</required>
+            <rtexprvalue>true</rtexprvalue>
+        </attribute>
+    </tag>
+</taglib>

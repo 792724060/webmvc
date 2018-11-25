@@ -1,4 +1,4 @@
-package cn.gin.webmvc.demo.controller;
+package cn.gin.webmvc.demo.web.controller;
 
 import cn.gin.webmvc.anno.RequestMapping;
 import cn.gin.webmvc.controller.Controller;
