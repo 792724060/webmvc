@@ -124,7 +124,7 @@ public class ApplicationContext {
     /**
      * <p>Need to load the context configuration and initialized the application context.</p>
      */
-    private void init() {
+    public void init() {
 
         if (!this.loadConfig() || config == null) {
             throw new ContextLoadException("Occurred an exception when the ApplicationContextConfig was loaded.");
